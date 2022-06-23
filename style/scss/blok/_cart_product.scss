@@ -1,0 +1,151 @@
+
+.cart_product{
+  display: inline-flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  width: 200px;
+
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #F3F3F3;
+
+
+
+
+  &__img{
+    margin-top: 16px;
+  }
+
+
+  &__text{
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: left;
+
+
+    &::before{
+      font-weight: 500;
+      content: $description-trxt;
+    }
+
+    &__cod{
+    font-size: 10px;
+    color: #616070;
+    margin-top: 4px;
+
+    &::after{
+      content:$cod-product;
+    }
+    }
+  }
+
+  
+  &__comment{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    
+
+    &__stars{
+      display: inline-flex;
+      flex-direction: row-reverse;
+      gap: 4px;
+      font-size: 15px;
+
+      input{
+        display: none;
+
+        &:checked ~ label::before{
+          opacity: 1;
+        }
+      }
+
+      label{
+        cursor: pointer;
+        position: relative;
+        color: #E5E5E5;
+
+
+        &::before{
+          content: '★';
+          color: #FFDE6A;
+          position: absolute;
+          opacity: 0;
+        }
+        &:hover:before{
+          opacity: 1;
+        }
+
+        &:hover ~ label:before{
+          opacity: 1;
+        }
+
+        
+      }
+
+
+    }
+
+    &__amount{
+      margin: auto ;
+      font-size: 11px;
+
+      &::after{
+        content: $cslc-amount;
+      }
+    }
+  }
+
+
+  &__price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+    &__text{
+      font-size: 12px;
+      font-weight: 400;
+      margin: auto 0;
+      color: #616070;
+    }
+
+
+    &__money::before{
+      font-weight: 700;
+      font-size: 16px;
+      color: #060B35;
+      content: $money;
+    }
+  }
+
+
+  &__button{
+    display: flex;
+    text-decoration: none;
+    margin-top: 16px;
+    height: 40px;
+    
+
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: white;
+    background-color: #00ACDC;
+    border: 1px solid #00ACDC;
+
+    &__text{
+      margin: auto;
+    }
+
+    &:hover{
+      color: #00ACDC;
+      background-color: #fff;
+    }
+
+  }
+}

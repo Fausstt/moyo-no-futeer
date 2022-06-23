@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+p {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  font-size: 12px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+.nav__img {
+  flex-shrink: 0;
+  margin: auto 0 auto 50px;
+}
+.nav__list {
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+.nav__linc {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 10px;
+}
+.nav__linc:hover {
+  color: #00ACDC;
+  border-bottom: 4px solid #00ACDC;
+}
+.nav--sticky {
+  position: sticky;
+  top: 0;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 50px;
+  width: 950px;
+  margin-top: 51px;
+}
+
+.cart_product {
+  display: inline-flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #F3F3F3;
+}
+.cart_product__img {
+  margin-top: 16px;
+}
+.cart_product__text {
+  font-size: 12px;
+  margin-top: 40px;
+  text-align: left;
+}
+.cart_product__text::before {
+  font-weight: 500;
+  content: "Моноблок APPLE A1419 iMac 27 Retina 5K (MNED2UA/A)";
+}
+.cart_product__text__cod {
+  font-size: 10px;
+  color: #616070;
+  margin-top: 4px;
+}
+.cart_product__text__cod::after {
+  content: "195434";
+}
+.cart_product__comment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.cart_product__comment__stars {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  gap: 4px;
+  font-size: 15px;
+}
+.cart_product__comment__stars input {
+  display: none;
+}
+.cart_product__comment__stars input:checked ~ label::before {
+  opacity: 1;
+}
+.cart_product__comment__stars label {
+  cursor: pointer;
+  position: relative;
+  color: #E5E5E5;
+}
+.cart_product__comment__stars label::before {
+  content: "★";
+  color: #FFDE6A;
+  position: absolute;
+  opacity: 0;
+}
+.cart_product__comment__stars label:hover:before {
+  opacity: 1;
+}
+.cart_product__comment__stars label:hover ~ label:before {
+  opacity: 1;
+}
+.cart_product__comment__amount {
+  margin: auto;
+  font-size: 11px;
+}
+.cart_product__comment__amount::after {
+  content: "5";
+}
+.cart_product__price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.cart_product__price__text {
+  font-size: 12px;
+  font-weight: 400;
+  margin: auto 0;
+  color: #616070;
+}
+.cart_product__price__money::before {
+  font-weight: 700;
+  font-size: 16px;
+  color: #060B35;
+  content: "69 999";
+}
+.cart_product__button {
+  display: flex;
+  text-decoration: none;
+  margin-top: 16px;
+  height: 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #00ACDC;
+  border: 1px solid #00ACDC;
+}
+.cart_product__button__text {
+  margin: auto;
+}
+.cart_product__button:hover {
+  color: #00ACDC;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=index.css.map */

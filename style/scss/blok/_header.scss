@@ -1,0 +1,46 @@
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: $header-size;
+  font-size: 12px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+  &__img{
+    flex-shrink: 0;
+    margin: auto 0 auto 50px;
+  }
+
+  &__list{
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+
+  &__linc{
+    display:flex;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 10px;
+  }
+
+  &__linc:hover{
+    color: #00ACDC;
+    border-bottom: 4px solid #00ACDC;
+  }
+
+  &--sticky{
+    position: sticky;
+    top: 0;
+  }
+}
+
+
+
+
+
+
+
